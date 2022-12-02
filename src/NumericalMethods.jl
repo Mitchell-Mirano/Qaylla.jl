@@ -4,7 +4,7 @@ module NumericalMethods
        include("./interpolate/lagrange.jl")
        include("./interpolate/newton.jl")
 
-       export lagrange
+       export lagrange,
               newton
 
        # integral methods
@@ -13,16 +13,16 @@ module NumericalMethods
        include("./integral/newton-cotes.jl")
        include("./integral/romberg.jl")
        
-       export trapeze
-              simpson
-              newtonCotes
+       export trapeze,
+              simpson,
+              newtonCotes,
               romberg
 
        # integral2d methods
        include("./integral2d/trapezed2.jl")
        include("./integral2d/simpson2d.jl")
 
-       export trapeze2d
+       export trapeze2d,
               simpson2d
 
 end # module NumericalMethods
