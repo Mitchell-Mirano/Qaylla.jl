@@ -1,3 +1,11 @@
+"""
+    lagrange(x,y)
+
+computes the lagrange interpolation polynomial
+
+"""
+
+
 function lagrange(x,y)::Function
     
     function p(value::Number)
