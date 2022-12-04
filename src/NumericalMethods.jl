@@ -15,7 +15,7 @@ include("./integral/romberg.jl")
 
 export trapeze,
        simpson,
-       newtonCotes,
+       newton_cotes,
        romberg
 
 # integral2d methods
@@ -24,5 +24,10 @@ include("./integral2d/simpson2d.jl")
 
 export trapeze2d,
        simpson2d
+
+# differeential equations methods
+include("./diferential-equations/euler.jl")
+
+export euler
 
 end # module NumericalMethods

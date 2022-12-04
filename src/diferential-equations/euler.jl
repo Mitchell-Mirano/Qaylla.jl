@@ -1,36 +1,71 @@
-function euler(f::Function,
-               t0::Number,
-               y0::Number,
-               tn::Number,
+"""
+    euler(F::Function,
+          t₀::Number,
+          y₀::Number,
+          tₙ::Number,
+          nh::Number,
+          return_values::Bool=false)
+
+Computes the Euler aproximation for `y(t)` in `tₙ`.
+
+## Arguments
+- `F(t,y)::Function`: The `y'(t)`.
+- `t₀::Number`: The initial point. 
+- `tₙ::Number`: The final point. 
+- `nh::Number`: If 1≤nh, nh is the number of subintervals beetwen t₀ and tₙ,
+else nh is the length of the subintervals beetwen t₀ and tₙ.
+- `return_values::Bool`: If is true return t_values=[t₀,t₁...,tₙ],
+   y_values=[y₀,y₁...,yₙ], else return yₙ.
+
+## Example
+```jldoctest
+julia> using NumericalMethods
+
+julia> F(t,y)=t-y
+F (generic function with 1 method)
+
+julia> euler(F,0,2,1,5)
+0.9830400000000001
+
+julia> euler(F,0,2,1,5,true)
+(Any[0, 0.2, 0.4, 0.6000000000000001, 0.8, 1.0], Any[2, 1.6, 1.32, 1.1360000000000001, 1.0288000000000002, 0.9830400000000001])
+
+julia> euler(F,0,2,1,0.2,true)
+(Any[0, 0.2, 0.4, 0.6000000000000001, 0.8, 1.0], Any[2, 1.6, 1.32, 1.1360000000000001, 1.0288000000000002, 0.9830400000000001])
+```
+"""
+function euler(F::Function,
+               t₀::Number,
+               y₀::Number,
+               tₙ::Number,
                nh::Number,
                return_values::Bool=false)
 
-
     if nh>=1.0
         n=nh
-        h=(tn-t0)/n
+        h=(tₙ-t₀)/n
     else
-        n=(tn-t0)/nh
+        n=(tₙ-t₀)/nh
         h=nh
     end
 
     n::Int64=n 
-    yn=y0 
+    yₙ=y₀
 
     if return_values
         t_values=[]
         y_values=[]
 
-        append!(t_values,t0)
-        append!(y_values,y0)
+        append!(t_values,t₀)
+        append!(y_values,y₀)
 
-        tn=t0
+        tₙ=t₀
 
         for _ in 1:n
-            yn=yn+h*f(tn,yn)
-            tn=tn+h
-            append!(y_values,yn)
-            append!(t_values,tn)
+            yₙ=yₙ+h*F(tₙ,yₙ)
+            tₙ=tₙ+h
+            append!(y_values,yₙ)
+            append!(t_values,tₙ)
         end
 
         return t_values,y_values
@@ -39,9 +74,8 @@ function euler(f::Function,
 
 
     for i in 1:n
-        yn=yn+h*f(t0+h*(i-1),yn)
+        yₙ=yₙ+h*F(t₀+h*(i-1),yₙ)
     end
 
-    return yn
+    return yₙ
 end
-

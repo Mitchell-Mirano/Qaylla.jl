@@ -1,18 +1,18 @@
 """
     lagrange(x,y)::Function
 
-computes the lagrange interpolation polynomial
+Computes the Lagrange interpolation polynomial
 
 ## Arguments
-- `x::Vector{Number}`: the xᵢ values for i=1,2...n 
-- `y::Vector{Number}`: the f(xᵢ) values for i=1,2...n 
+- `x::Vector{Number}`: The xᵢ values for i=1,2...n 
+- `y::Vector{Number}`: The f(xᵢ) values for i=1,2...n 
 
 ## Return 
-- `p::Function`: The lagrange interpolation polynomial
+- `p::Function`: The Lagrange interpolation polynomial
 
 ## Example
 ```jldoctest
-julia> using NumericalMethods:lagrange
+julia> using NumericalMethods
 
 julia> x=[0,1,2,3,4]
 5-element Vector{Int64}:
