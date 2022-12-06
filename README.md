@@ -15,13 +15,13 @@ Pkg.add("https://github.com/Mitchell-Mirano/NumericalMethods.jl.git")
 x=0:0.5:3
 y=x .|> x->exp(x)
 p=lagrange(x,y) #computes p(x), the Lagrange polynomial interpolation.
-p(2.1) # user p(x) in a point.
+p(2.1) # use p(x) in a point.
 ```
 ```julia
 x=0:0.5:3
 y=x .|> x->exp(x)
 p=newton(x,y) #computes p(x), the Newton polynomial interpolation.
-p(2.1) # user p(x) in a point.
+p(2.1) # use p(x) in a point.
 ```
 
 ## Integrations
