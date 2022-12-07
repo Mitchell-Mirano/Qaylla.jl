@@ -1,17 +1,17 @@
 module NumericalMethods
 
 # interpolation methods
-include("./interpolate/lagrange.jl")
-include("./interpolate/newton.jl")
+include("./interpolations/lagrange.jl")
+include("./interpolations/newton.jl")
 
 export lagrange,
        newton
 
 # integral methods
-include("./integral/trapeze.jl")
-include("./integral/simpson.jl")
-include("./integral/newton-cotes.jl")
-include("./integral/romberg.jl")
+include("./integrals/trapeze.jl")
+include("./integrals/simpson.jl")
+include("./integrals/newton-cotes.jl")
+include("./integrals/romberg.jl")
 
 export trapeze,
        simpson,
@@ -19,14 +19,14 @@ export trapeze,
        romberg
 
 # integral2d methods
-include("./integral2d/trapezed2.jl")
-include("./integral2d/simpson2d.jl")
+include("./2d-integrals/trapezed2.jl")
+include("./2d-integrals/simpson2d.jl")
 
 export trapeze2d,
        simpson2d
 
 # differeential equations methods
-include("./diferential-equations/euler.jl")
+include("./differential-equations/euler.jl")
 
 export euler
 
