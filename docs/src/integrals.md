@@ -19,8 +19,11 @@ newton_cotes(f::Function,a::Number,b::Number,n::Int64,closed::Bool=true)
 ## trapeze2d method
 ```@docs
 trapeze2d(F::Function,a::Number,b::Number,c::Number,d::Number,n::Int,m::Int)
+trapeze2d(F::Function,a::Number,b::Number,c::Function,d::Function,n::Int,m::Int)
 ```
 ## Simpson2d method
 ```@docs
 simpson2d(F::Function,a::Number,b::Number,c::Number,d::Number,n::Int,m::Int)
+simpson2d(F::Function,a::Number,b::Number,c::Function,d::Function,n::Int,m::Int)
+
 ```

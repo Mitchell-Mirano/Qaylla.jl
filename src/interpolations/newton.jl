@@ -12,27 +12,16 @@ Computes the Newton interpolation polynomial
 
 ## Example
 ```jldoctest
-julia> using NumericalMethods:newton
+using NumericalMethods
 
-julia> x=[0,1,2,3,4]
-5-element Vector{Int64}:
- 0
- 1
- 2
- 3
- 4
+x=0:0.5:3
+y=exp.(x)
+p=newton(x,y)
+p(2.5)
 
-julia> y= x .|> x->x^2
-5-element Vector{Int64}:
- 0
- 1
- 4
- 9
- 16
+# output
 
-julia> p=newton(x,y)
-julia> p(2.5)
-6.25
+12.182493960703471
 ```
 """
 function newton(x,y)::Function
