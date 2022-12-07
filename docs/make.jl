@@ -13,3 +13,6 @@ makedocs(
     ]
 )
 
+deploydocs(
+    repo = "github.com/Mitchell-Mirano/NumericalMethods.jl.git",
+)
