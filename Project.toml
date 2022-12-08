@@ -3,7 +3,5 @@ uuid = "160ec2fe-adfa-420e-809b-15ae23db4a01"
 authors = ["Mitchell Mirano <mitchellmirano25@gmail.com>"]
 version = "0.1.0"
 
-[deps]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-DocumenterTools = "35a29f4d-8980-5a13-9543-d66fff28ecb8"
-Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+[compat]
+julia = "1.8"
