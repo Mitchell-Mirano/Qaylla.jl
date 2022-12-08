@@ -1,7 +1,7 @@
 name = "NumericalMethods"
 uuid = "160ec2fe-adfa-420e-809b-15ae23db4a01"
 authors = ["Mitchell Mirano <mitchellmirano25@gmail.com>"]
-version = "0.1.1"
+version = "0.1.0"
 
 [compat]
 julia = "1.8"
