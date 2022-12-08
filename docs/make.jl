@@ -1,10 +1,10 @@
 using Documenter, NumericalMethods
 
 makedocs(
-    modules = [NumericalMethods],
-    format = Documenter.HTML(prettyurls = get(ENV, "CI", nothing) == "true"),
     sitename = "NumericalMethods.jl",
     authors  = "Mitchell Mirano",
+    modules=[NumericalMethods],
+    format=Documenter.HTML(prettyurls = get(ENV, "CI", nothing)=="true"),
     pages = [
         "Home" => "index.md",
         "Interpolations" => "interpolations.md",
@@ -14,5 +14,5 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/Mitchell-Mirano/NumericalMethods.jl.git",
+    repo = "github.com/Mitchell-Mirano/NumericalMethods.jl.git"
 )
