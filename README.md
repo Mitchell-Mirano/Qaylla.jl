@@ -1,11 +1,11 @@
-# Yaqa.jl
+# Qaylla.jl
 
 Interpolate, derive, integrate and solve differential equations, using the main methods of numerical analysis, with the Julia power.
 
 # Installation
 ```julia
 using Pkg
-Pkg.add("https://github.com/Mitchell-Mirano/Yaqa.jl.git")
+Pkg.add("https://github.com/Mitchell-Mirano/Qaylla.jl.git")
 ```
 # Examples
 

@@ -1,4 +1,4 @@
-# Yaqa.jl
+# Qaylla.jl
 
 Interpolate, derive, integrate and solve differential equations, using the main methods of numerical analysis, with Julia.
 
@@ -7,12 +7,12 @@ Interpolate, derive, integrate and solve differential equations, using the main 
 - [Mitchell Mirano Caro](https://github.com/Mitchell-Mirano), Faculty of Mathematics, National University of San Marcos(UNMSM).
 
 ### License
-The Yaqa.jl package is licensed under the MIT  License.
+The Qaylla.jl package is licensed under the MIT  License.
 
 # Installation
 ```julia
 using Pkg
-Pkg.add("https://github.com/Mitchell-Mirano/Yaqa.jl.git")
+Pkg.add("https://github.com/Mitchell-Mirano/Qaylla.jl.git")
 ```
 # Examples
 

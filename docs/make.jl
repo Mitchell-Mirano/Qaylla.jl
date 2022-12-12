@@ -1,9 +1,9 @@
-using Documenter, Yaqa
+using Documenter, Qaylla
 
 makedocs(
-    sitename = "Yaqa.jl",
+    sitename = "Qaylla.jl",
     authors  = "Mitchell Mirano",
-    modules=[Yaqa],
+    modules=[Qaylla],
     format=Documenter.HTML(prettyurls = get(ENV, "CI", nothing)=="true"),
     pages = [
         "Home" => "index.md",
@@ -14,5 +14,5 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/Mitchell-Mirano/Yaqa.jl.git"
+    repo = "github.com/Mitchell-Mirano/Qaylla.jl.git"
 )

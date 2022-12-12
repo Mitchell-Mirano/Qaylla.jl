@@ -22,7 +22,7 @@ applying the composite trapeze method.
 
 ## Example
 ```jldoctest
-julia> using Yaqa
+julia> using Qaylla
 
 julia> F(x,y)=x^2 + sin(y)
 F (generic function with 1 method)
@@ -98,7 +98,7 @@ applying the composite trapeze method.
 
 ## Example
 ```jldoctest
-julia> using Yaqa
+julia> using Qaylla
 
 julia> F(x,y)=x^2 + sin(y)
 F (generic function with 1 method)

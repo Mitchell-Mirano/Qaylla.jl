@@ -19,7 +19,7 @@ else nh is the length of the subintervals beetwen t₀ and tₙ.
 
 ## Example
 ```jldoctest
-julia> using Yaqa
+julia> using Qaylla
 
 julia> F(t,y)=t-y
 F (generic function with 1 method)

@@ -12,7 +12,7 @@ Computes the Newton interpolation polynomial
 
 ## Example
 ```jldoctest
-using Yaqa
+using Qaylla
 
 x=0:0.5:3
 y=exp.(x)
