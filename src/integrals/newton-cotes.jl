@@ -6,7 +6,7 @@ If closed=true `1≤n≤4`, else `0≤n≤3`.
 
 ## Example
 ```jldoctest
-julia> using NumericalMethods
+julia> using Yaqa
 
 julia> f(x)=sin(x)
 f (generic function with 1 method)

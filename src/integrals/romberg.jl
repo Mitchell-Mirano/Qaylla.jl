@@ -5,7 +5,7 @@ Computes the integral of f applying the Romberg method.
 
 ## Example
 ```jldoctest
-julia> using NumericalMethods
+julia> using Yaqa
 
 julia> f(x)=sin(x)
 f (generic function with 1 method)

@@ -5,7 +5,7 @@ Computes the integral of f applying the composite trapeze method.
 
 ## Example
 ```jldoctest
-julia> using NumericalMethods
+julia> using Yaqa
 
 julia> f(x)=sin(x)
 f (generic function with 1 method)
