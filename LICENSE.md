@@ -1,4 +1,4 @@
-The NumericalMethods.jl package is licensed under the MIT  License:
+The Qaylla.jl package is licensed under the MIT  License:
 
 > Copyright (c) 2022 Mitchell Mirano
 > 
