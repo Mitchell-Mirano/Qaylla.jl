@@ -1,4 +1,4 @@
-module NumericalMethods
+module Yaqa
 
 # interpolation methods
 include("./interpolations/lagrange.jl")

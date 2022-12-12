@@ -1,9 +1,9 @@
-using Documenter, NumericalMethods
+using Documenter, Yaqa
 
 makedocs(
-    sitename = "NumericalMethods.jl",
+    sitename = "Yaqa.jl",
     authors  = "Mitchell Mirano",
-    modules=[NumericalMethods],
+    modules=[Yaqa],
     format=Documenter.HTML(prettyurls = get(ENV, "CI", nothing)=="true"),
     pages = [
         "Home" => "index.md",
@@ -14,5 +14,5 @@ makedocs(
 )
 
 deploydocs(
-    repo = "github.com/Mitchell-Mirano/NumericalMethods.jl.git"
+    repo = "github.com/Mitchell-Mirano/Yaqa.jl.git"
 )
