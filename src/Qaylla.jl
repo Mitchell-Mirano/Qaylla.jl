@@ -3,9 +3,11 @@ module Qaylla
 # interpolation methods
 include("./interpolations/lagrange.jl")
 include("./interpolations/newton.jl")
+include("./interpolations/cubic-splines.jl")
 
 export lagrange,
-       newton
+       newton,
+       cubic_splines
 
 # integral methods
 include("./integrals/trapeze.jl")
