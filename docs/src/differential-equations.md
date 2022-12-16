@@ -2,5 +2,5 @@
 
 ## Euler Method
 ```@docs
-euler(F::Function,t₀::Number,y₀::Number,tₙ::Number,nh::Number,return_values::Bool=false)
+euler(F::Function,a::Number,y_0::Number,b::Number,nh::Number)
 ```
