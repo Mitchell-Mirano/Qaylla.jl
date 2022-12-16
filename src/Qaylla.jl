@@ -29,7 +29,9 @@ export trapeze2d,
 
 # differeential equations methods
 include("./differential-equations/euler.jl")
+include("./differential-equations/modified-euler.jl")
 
-export euler
+export euler, 
+       modified_euler
 
 end # module NumericalMethods
