@@ -16,8 +16,9 @@ Computes the Euler aproximation for `y(t)`, when a≤t≤b.
 else nh is the length of the subintervals beetwen a and b.
 
 ## Return 
-- `t_values`::Array{Float64}: [t₀,t₁...,tₙ]
-- `y_values`::Array{Float64}: [y₀,y₁...,yₙ]
+- `t_values`::Array{Float64}: [t₀,t₁...,tₙ], where tᵢ=a + ih
+- `w_values`::Array{Float64}: [w₀,w₁...,wₙ], where wᵢ≈yᵢ=y(tᵢ)
+    
 
 ## Example
 ```jldoctest
@@ -48,22 +49,23 @@ function euler(F::Function,
     end
     
     t_values::Vector{Float64}=[]
-    y_values::Vector{Float64}=[]
-
-    push!(t_values,a)
-    push!(y_values,y_0)
+    w_values::Vector{Float64}=[]
 
     n::Int64=n 
-    t_n=a
-    y_n=y_0
+    ti=a
+    wi=y_0
+    
+    push!(t_values,ti)
+    push!(w_values,wi)
+
 
     for _ in 1:n
-        y_n=y_n+h*F(t_n,y_n)
-        t_n=t_n+h
-        push!(y_values,y_n)
-        push!(t_values,t_n)
+        wi=wi+h*F(ti,wi)
+        ti=ti+h
+        push!(t_values,ti)
+        push!(w_values,wi)
     end
 
-    return t_values,y_values
+    return t_values,w_values
     
 end
