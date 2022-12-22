@@ -14,3 +14,8 @@ modified_euler(F::Function,a::Number,y_0::Number,b::Number,nh::Number)
 ```@docs
 runge_kutta_order_2(F::Function,a::Number,y_0::Number,b::Number,nh::Number)
 ```
+
+## Heun Method
+```@docs
+heun(F::Function,a::Number,y_0::Number,b::Number,nh::Number)
+```

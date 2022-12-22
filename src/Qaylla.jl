@@ -31,9 +31,11 @@ export trapeze2d,
 include("./differential-equations/euler.jl")
 include("./differential-equations/modified-euler.jl")
 include("differential-equations/runge-kutta2.jl")
+include("differential-equations/heun.jl")
 
 export euler, 
        modified_euler,
-       runge_kutta_order_2
+       runge_kutta_order_2,
+       heun
 
 end # module NumericalMethods
