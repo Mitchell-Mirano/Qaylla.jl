@@ -32,10 +32,12 @@ include("./differential-equations/euler.jl")
 include("./differential-equations/modified-euler.jl")
 include("differential-equations/runge-kutta2.jl")
 include("differential-equations/heun.jl")
+include("differential-equations/runge-kutta4.jl")
 
 export euler, 
        modified_euler,
        runge_kutta_order_2,
-       heun
+       heun,
+       runge_kutta_order_4
 
 end # module NumericalMethods
