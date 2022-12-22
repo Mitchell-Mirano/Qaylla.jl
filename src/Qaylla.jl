@@ -3,9 +3,11 @@ module Qaylla
 # interpolation methods
 include("./interpolations/lagrange.jl")
 include("./interpolations/newton.jl")
+include("./interpolations/cubic-splines.jl")
 
 export lagrange,
-       newton
+       newton,
+       cubic_splines
 
 # integral methods
 include("./integrals/trapeze.jl")
@@ -27,7 +29,15 @@ export trapeze2d,
 
 # differeential equations methods
 include("./differential-equations/euler.jl")
+include("./differential-equations/modified-euler.jl")
+include("differential-equations/runge-kutta2.jl")
+include("differential-equations/heun.jl")
+include("differential-equations/runge-kutta4.jl")
 
-export euler
+export euler, 
+       modified_euler,
+       runge_kutta_order_2,
+       heun,
+       runge_kutta_order_4
 
 end # module NumericalMethods

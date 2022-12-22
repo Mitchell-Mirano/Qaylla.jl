@@ -12,7 +12,7 @@ The Qaylla.jl package is licensed under the MIT  License.
 # Installation
 ```julia
 using Pkg
-Pkg.add("https://github.com/Mitchell-Mirano/Qaylla.jl.git")
+Pkg.add("Qaylla")
 ```
 # Examples
 

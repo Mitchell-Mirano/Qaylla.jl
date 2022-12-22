@@ -8,3 +8,7 @@ lagrange(x,y)
 ```@docs
 newton(x,y)
 ```
+## Cubic Splines method
+```@docs
+cubic_splines(x_data,y_data)
+```
