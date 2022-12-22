@@ -58,18 +58,18 @@ function heun(F::Function,
     push!(w_values,wi)
 
     for _ in 1:n
+
         k1=F(ti,wi)
         k2=F(ti+(2/3)*h,wi+(2/3)*h*F(ti+h/3,wi+h/3*F(ti,wi)))
+
         wi=wi + (h/4)*(k1+3*k2)
         ti=ti + h
+
         push!(t_values,ti)
         push!(w_values,wi)
+        
     end
 
     return t_values,w_values
     
 end
-
-F(t,y)=t-y
-heun(F,0,2,1,5)
-#heun(F,0,2,1,0.2)
